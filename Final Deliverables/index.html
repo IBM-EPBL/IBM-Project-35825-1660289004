@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body
+background="https://oge.tmu.edu.tw/admission/apply/graduation-hat-with-degree-paper
+-on-a-stack-of-book/">
+<head>
+<style>
+body {
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+background-image: url("admission.jpg");
+height: 300;
+width: 300; 
+}
+
+</style>
+<title>University Admit Eligibility Predictor</title>
+</head>
+<h2 style="color:blue"><font size="+2">UNIVERSITY ADMISSION PREDICTION
+SYSTEM</font></h2>
+<h3><font size="+1">Enter your details and get probability of your
+admission</font></h3>
+<form action="{{url_for('predict')}}"method="POST">
+<br>
+<font size="+1">Enter GRE score <input id="gre" type="number" name="gre"
+required="required"></font>
+<br><br>
+<font size="+1">Enter TOEFL score <input id="toefl" type="number"
+name="toefl" required="required"></font>
+<br><br>
+<font size="+1">Select University number</font><br>
+<input id="universityNumber" type="radio" id="1" name="universityNumber"
+value="1">
+<label for="1">1</label><br>
+<input type="radio" id="2" name="universityNumber" value="2">
+<label for="2">2</label><br>
+<input type="radio" id="3" name="universityNumber" value="3">
+<label for="3">3</label><br>
+<input type="radio" id="4" name="universityNumber" value="4">
+<label for="4">4</label><br>
+<input type="radio" id="5" name="universityNumber" value="5">
+<label for="5">5</label><br>
+<br>
+<font size="+1">Enter SOP <input id="sop" type="number" name="sop" min="1"
+max="5" required="required"></font>
+<br><br>
+<font size="+1">Enter LOR <input id="lor" type="number" name="lor" min="1"
+max="5" required="required"></font>
+<br><br>
+<font size="+1">Enter CGPA <input id="cgpa" type="number" name="cgpa"
+required="required"></font>
+<br><br>
+<font size="+1">Research</font><br>
+<input id="research" type="radio" id="researchDone" name="research"
+value="1">
+<label for="research">Research</label><br>
+<input id="noresearch" type="radio" name="research" value="0">
+<label for="noresearch">No Research</label><br>
+<br>
+<button type="submit" value="Predict"><font
+size="+1">Predict</font></button>
+</form>
+</body>
+</html>

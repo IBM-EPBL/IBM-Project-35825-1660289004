@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <style>
+        body{
+            background-image: url("admissions.jpg");
+            
+            background-repeat: no-repeat;
+            background-position: top 200px left 100px;
+
+            width: "300";
+            height: "300";
+            object-fit: cover;
+        }
+    </style>
+<style>
+div.static{
+position: absolute;
+top: 250px;
+left:900px;
+}
+</style>
+
+<h2 style="color:black"><font size="+5">
+    <b>UNIVERSITY ADMISSION PREDICTION
+SYSTEM</b></font></h2>
+<title></title>
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="static">
+<form action="{{url_for('homepage')}}" method="post">
+<h2>Sign in</h2><br>
+<font size="+1"><label for="inputEmail">Email address</label></font>
+<input type="email" id="inputEmail" name="name" placeholder="Email
+address" required autofocus>
+<br><br><font size="+1"><label for="inputPassword">Password
+</label></font>
+<input type="password" id="inputPassword" name="pass"
+placeholder="Password" required>
+<div class="checkbox">
+<label>
+<input type="checkbox" value="remember-me"> Remember me
+</label>
+</div>
+<button style="background-color:black; color:white; width:100%"
+type="submit">Sign in</button>
+</form>
+</div>
+</div>
+<footer></footer>
+</body>
+</html>
